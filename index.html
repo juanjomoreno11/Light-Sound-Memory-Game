@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing buttons.
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class = "hidden" onclick = "stopGame()">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onmousedown="startTone(1), showImg(1)" onmouseup="stopTone(), hideImg(1)" onclick="guess(1)">
+        <img id="img1" src="https://cdn.glitch.com/46cc844f-c645-4444-992f-8e9254c24765%2FgreenRose.jpeg?v=1616299151976" alt="can't load" width="150" height="150" class = "hidden">
+      </button>
+      <button id="button2" onmousedown="startTone(2), showImg(2)" onmouseup="stopTone(), hideImg(2)" onclick="guess(2)">
+        <img id="img2" src="https://cdn.glitch.com/46cc844f-c645-4444-992f-8e9254c24765%2FblueRose.jpeg?v=1616299846860" alt="can't load" width="150" height="150" class = "hidden">
+      </button>  
+      <button id="button3" onmousedown="startTone(3), showImg(3)" onmouseup="stopTone(), hideImg(3)" onclick="guess(3)">
+        <img id="img3" src="https://cdn.glitch.com/46cc844f-c645-4444-992f-8e9254c24765%2FredRose.jpeg?v=1616300204432" alt="can't load" width="150" height="150" class = "hidden">
+      </button>  
+      <button id="button4" onmousedown="startTone(4), showImg(4)" onmouseup="stopTone(), hideImg(4)" onclick="guess(4)">
+        <img id="img4" src="https://cdn.glitch.com/46cc844f-c645-4444-992f-8e9254c24765%2FyellowRose.jpeg?v=1616300403280" alt="can't load" width="150" height="150" class = "hidden">
+      </button>  
+      <button id="button5" onmousedown="startTone(5), showImg(5)" onmouseup="stopTone(), hideImg(5)" onclick="guess(5)">
+        <img id="img5" src="https://cdn.glitch.com/46cc844f-c645-4444-992f-8e9254c24765%2FmagentaRose.jpeg?v=1616300562417" alt="can't load" width="150" height="150" class = "hidden">
+      </button>  
+      <button id="button6" onmousedown="startTone(6), showImg(6)" onmouseup="stopTone(), hideImg(6)" onclick="guess(6)">
+        <img id="img6" src="https://cdn.glitch.com/46cc844f-c645-4444-992f-8e9254c24765%2FpurpleRose.jpeg?v=1616301070180" alt="can't load" width="150" height="150" class = "hidden">
+      </button>  
+    </div>
+    
+    
+  </body>
+</html>
